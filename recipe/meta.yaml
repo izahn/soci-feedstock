@@ -14,7 +14,7 @@ source:
     - 0001-Fix-PostgreSQL-tests-build-under-macOS.patch
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: soci-core
@@ -126,8 +126,7 @@ outputs:
 
 about:
   home: http://soci.sourceforge.net/
-  license: BSD-3-Clause
-  license_family: BSD
+  license: BSL-1.0
   license_file: LICENSE
   summary: 'SOCI is a general purpose database access library written in C++.'
   doc_url: http://soci.sourceforge.net/doc/release/4.0/
