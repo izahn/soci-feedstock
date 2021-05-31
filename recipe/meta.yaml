@@ -1,5 +1,5 @@
 {% set name = "soci" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 {% set version_major = version.split(".")[0] %}
 {% set version_minor = version.split(".")[1] %}
 
@@ -8,13 +8,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/SOCI/soci/archive/{{ version }}.tar.gz
-  sha256: fa69347b1a1ef74450c0382b665a67bd6777cc7005bbe09726479625bcf1e29c
+  url: https://github.com/SOCI/soci/archive/v{{ version }}.tar.gz
+  sha256: f293192a412ed82693d17dfe46e2734b140bff835bc3259e3cbd7c315e5e2d74
   patches:
-    - 0001-Fix-PostgreSQL-tests-build-under-macOS.patch
+    - 0001-Define-specific-mysql-versions-to-use-my_bool-or-boo.patch
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: soci-core
